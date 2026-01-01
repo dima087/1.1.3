@@ -1,0 +1,226 @@
+@font-face {font-family: 'TT Lakes';src: url(fonts/TTLakes-Regular.woff) format("truetype");font-weight:normal;font-style: normal;}
+@font-face {font-family: 'TT Lakes Medium';src: url(fonts/TTLakes-Medium.woff) format("truetype");font-weight: 500;font-style: normal;}
+@font-face {font-family: 'TT Lakes';src: url(fonts/TTLakes-Bold.woff) format("truetype");font-weight:bold;font-style: normal;}
+
+
+body {
+    width: 320px;
+    height: 1024px;
+    background-color: #ffffff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    box-shadow: 20px 0px 40px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+    height: 88px;
+    padding: 19px 24px;
+    background-color: #ffffff;
+}
+
+.header__navigation {
+    display: flex;
+    align-self: baseline;
+    width: auto;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.button-round {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ff3e79;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-self: center;
+    background-size: 50%;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.button-round:hover {
+    transform: scale(1.1) rotate(100deg); /* Не смещает соседей */
+    /* вместо width/height изменений */ /* Поворот */
+
+}
+
+.header__navigation-logo {
+    margin-left: 17px;
+    transition: transform 0.3s ease;
+}
+
+.header__navigation-logo:hover {
+    transform: scale(1.1);
+}
+
+.button-round--burger {
+    background-image: url(img/ic_burger.svg);
+    background-size: 40px 40px;
+}
+
+.button-round--search {
+    background-image: url(img/ic_search.svg);
+    background-size: 40px 40px;
+    margin-left: 78px;
+}
+
+.aside {
+    padding-bottom: 200px;
+}
+
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.aside__menu li {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+ul::before {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 40px;
+    background: url(img/highlight.svg) no-repeat center;
+    margin-right: 12px;
+    vertical-align: middle;
+    left: 0;
+    top: 140px;
+    position: fixed;
+    }
+
+.list {
+    padding-left: 0;
+    color: #1B1C21;
+    font-family: TT Lakes;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.list--one {
+    color: #7E7E82;
+}
+
+.footer {
+    height: 124px;
+    width: 196px;
+}
+
+.footer__contact {
+    margin-left: 24px;
+}
+
+.footer__call,
+.footer__lang {
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+    padding-left: 0;
+    list-style-type: none;
+
+}
+
+.button-round--call {
+    background-image: url(img/call.svg);
+    background-size: 40px 40px;
+
+}
+
+.button-round--chat {
+    background-image: url(img/chat.svg);
+    background-size: 40px 40px;
+}
+
+.button-round--profile {
+    background-image: url(img/profile.svg);
+    background-size: 40px 40px;
+}
+
+.footer__copyright {
+    margin-left: 24px;
+    width: 260px;
+
+}
+
+.footer__call-mail {
+    display: inline-block;
+    color: rgba(27, 28, 33, 1);
+    font-family: TT Lakes;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-align: left;
+    text-decoration: none;
+    margin-bottom: 13px;
+}
+
+.footer__call-phone {
+    color: rgba(27, 28, 33, 1);
+    font-family: TT Lakes;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    text-decoration: none;
+    text-align: left;
+}
+
+.footer__end {
+    display: inline-block;
+    margin-left: 24px;
+    margin-top: 40px;
+}
+
+.footer__lang--ru {
+    color: rgba(126, 126, 130, 1);
+    font-family: TT Lakes;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.footer__lang--en {
+    color: rgba(27, 28, 33, 1);
+    font-family: TT Lakes;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.footer__lang--ch {
+    color: rgba(27, 28, 33, 1);
+    font-family: TT Lakes;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-align: left;
+    text-decoration: none;
+}
+
+a {
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #bb0039;
+}
+
